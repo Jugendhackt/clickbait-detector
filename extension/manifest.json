@@ -1,4 +1,4 @@
-{
+  {
 
   "manifest_version": 2,
   "name": "Bait warner",
@@ -15,6 +15,8 @@
     "matches": ["*://*.youtube.com/watch*"],
     "js": ["clickbait.js"]
   }
+],
+"permissions":[
+  "http://localhost/"
 ]
-
 }
