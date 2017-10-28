@@ -6,11 +6,11 @@ var c = url.searchParams.get("v");
 
 var xhr = new XMLHttpRequest();
 
-xhr.open("GET","http://localhost/id/"+c, true);
+xhr.open("GET","http://localhost:5000/id/"+c, true);
 xhr.onreadystatechange = function(){
   if(xhr.readyState == 4){
-    var clickbait = JSON.parse(xhr.responseText)
-    if(clickbait){
+    var response = JSON.parse(xhr.responseText)
+    if(response.clickbait){
       var pagemanager = document.getElementById("page-manager")
       var ytdwatch = pagemanager.getElementsByTagName("ytd-watch")[0]
       var top = document.getElementById("top")
