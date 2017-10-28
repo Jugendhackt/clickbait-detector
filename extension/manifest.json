@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Bait warner",
+  "version": "1.0",
+
+  "description": "Helps to detect click-bait videos",
+
+  "icons": {
+    "48": "icons/border-48.png",
+    "96": "icons/border-96.png"
+  },
+  "content_scripts": [
+  {
+    "matches": ["*://*.youtube.com/watch*"],
+    "js": ["clickbait.js"]
+  }
+]
+
+}
